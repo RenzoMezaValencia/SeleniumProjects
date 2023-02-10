@@ -14,12 +14,12 @@ public class GoogleSteps{
 
     @When("^I enter a serach criteria$")
     public void enterSearchCrtiteria(){
-
+        google.sendTextGoogleSearch("ChatGPT");
     }
 
     @And ("^click on the search button$")
     public void clickSearchButton(){
-
+        google.clickGoogleSearch();
     }
 
     @Then ("^the results match the criteria$")
